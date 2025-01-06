@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Designing Part */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #5DB996;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #E3F0AF;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(236, 7, 7, 0.1);
+    width: 100%;
+    max-width: 800px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Adding the task part */
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#taskInput {
+    width: 80%;
+    padding: 8px;
+    border: 1px solid #8D0B41;
+    border-radius: 5px;
+}
+
+/* list part */
+
+ol {
+    list-style-type: circle;
+    padding: 10px;
+}
+
+li {
+    padding: 10px;
+    background-color: #f9f9f9;
+    margin-top: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-name{
+    width : 65%;
+}
+
+li.completed {
+    text-decoration: line-through;
+    background-color: #f5af91;
+    color: #093914;
+}
+
+li.dragging {
+    opacity: 0.5; 
+}
+
+/* Buttons */
+
+button {
+    padding: 10px 30px;
+    background-color: #3827f1;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1a0ac6;
+}
+
+.remove-btn {
+    background-color: #dc3545;
+    color: white;
+    font-weight: 600;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.remove-btn:hover {
+    background-color: #c82333;
+}
+.update-btn {
+    background-color: #1f81ea;
+    color: white;
+    border: none;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.update-btn:hover {
+    background-color: #166ecc;
+}
+.done-btn {
+    background-color: #17c066;
+    color: white;
+    font-weight: 600;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.done-btn:hover {
+    background-color: #108747;
+}
+
